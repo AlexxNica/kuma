@@ -3,5 +3,7 @@ img, iframe, video {
 }
 
 img, video {
-    height: auto !important; /* always constrain to width, fixes CKEditor issue of autopopulating dimensions */
+    /* always constrain to width, fixes CKEditor issue of autopopulating dimensions */
+    /* stylelint-disable-next-line declaration-no-important */
+    height: auto !important;
 }

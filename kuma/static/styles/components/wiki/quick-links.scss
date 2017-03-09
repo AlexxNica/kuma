@@ -1,7 +1,6 @@
 $see-also-outdent : 6px;
 
 .quick-links {
-
     margin-bottom: $grid-spacing;
     position: relative;
     background-color: #fff;
@@ -32,7 +31,7 @@ $see-also-outdent : 6px;
 
     /* hides submenus by default */
     ul ul {
-       display: none;
+        display: none;
 
         .no-js & {
             display: block;
@@ -66,7 +65,7 @@ $see-also-outdent : 6px;
             background: $light-background-color;
             /* to left align the text in this box with the text above and below */
             @include bidi-style(margin-left, ($see-also-outdent * -1), margin-right, 0);
-            @include bidi-value(padding, 4px $see-also-outdent 4px 0px, 4px 0px 4px $see-also-outdent);
+            @include bidi-value(padding, 4px $see-also-outdent 4px 0, 4px 0 4px $see-also-outdent);
             text-indent: $see-also-outdent;
         }
     }

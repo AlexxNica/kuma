@@ -1,4 +1,7 @@
-/* edit, language, settings, save, and cancel buttons */
+/*
+edit, language, settings, save, and cancel buttons
+☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ */
+
 .page-buttons, #page-buttons {
     @include bidi-value(float, right, left);
     padding: 5px 0;
@@ -43,7 +46,6 @@ body:not(.zone-landing) #edit-button {
 }
 
 @media #{$media-query-small-desktop} {
-
     .page-buttons, #page-buttons {
         &.fixed {
             position: relative;
@@ -52,22 +54,19 @@ body:not(.zone-landing) #edit-button {
 }
 
 @media #{$media-query-mobile} {
-
     .page-buttons > li.page-buttons-edit {
         display: none;
     }
 }
 
 @media print {
-
-    .page-buttons{
+    .page-buttons {
         display: none;
     }
 }
 
 
 .move-page {
-
     #page-buttons {
         right: auto;
         top: auto;
@@ -79,7 +78,6 @@ body:not(.zone-landing) #edit-button {
 }
 
 #translate-document {
-
     header .page-buttons {
         clear: both;
         margin-bottom: 0;
@@ -89,7 +87,6 @@ body:not(.zone-landing) #edit-button {
 #new-document,
 #edit-document,
 #translate-document {
-
     .page-buttons {
         z-index: 1; /* Move above the .title and .metadata classes to be clickable. */
     }

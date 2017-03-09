@@ -16,6 +16,6 @@
     #tags-expertise,
     legend {
         width: 100%;
-       @include vendorize(box-sizing, border-box);
+        @include vendorize(box-sizing, border-box);
     }
 }

@@ -1,4 +1,6 @@
-/* add icon to external inks but not if they are to demos or if we're specifically to ignore */
+/*
+add icon to external inks but not if they are to demos or if we're specifically to ignore
+☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ */
 
 .external-icon:not([href^='https://mdn.mozillademos.org']):not(.ignore-external) {
     white-space: pre-line;

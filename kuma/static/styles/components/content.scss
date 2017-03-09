@@ -1,16 +1,19 @@
 @import 'option-list';
 
 /*
-    Additional formatting for the real page content; i.e. text in the <main> element
-    We cannot put these styles in the tags.styl file because they don't apply to the entire layout
-*/
+Additional formatting for the real page content; i.e. text in the <main> element
+We cannot put these styles in the tags.styl file because they don't apply to the entire layout
+☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ */
 
 $table-blue: #d4dde4;
 $table-cell-border: 2px solid #fff;
 
 .text-content {
 
-    /* tables */
+    /*
+    tables
+    ====================================================================== */
+
     table {
         border-collapse: collapse;
         border: solid #e0e0dc;
@@ -84,7 +87,9 @@ $table-cell-border: 2px solid #fff;
         @include rgba-fallback(background, $table-blue, 0.5);
     }
 
-    /* lists and definitions */
+    /*
+    lists and definitions
+    ====================================================================== */
     ul {
         list-style: disc;
 
@@ -127,6 +132,8 @@ $table-cell-border: 2px solid #fff;
         @include bidi-style(padding-left, $grid-spacing, padding-right, 0);
     }
 
+    /* =================================================================== */
+
     span.alllinks {
         display: block;
         text-align: right;
@@ -136,6 +143,7 @@ $table-cell-border: 2px solid #fff;
         &.lwrap {
             padding: 0 20px 10px 0;
         }
+
         &.rwrap {
             padding: 0 0 10px 20px;
         }
@@ -180,7 +188,7 @@ ul.directory-tree {
             }
 
             &:before {
-                top: 0px;
+                top: 0;
                 height: 0.75em;
                 width: 10px;
                 border-bottom: 1px solid $grey;
@@ -193,7 +201,7 @@ ul.directory-tree {
                 @include bidi-style(border-left, 1px solid $grey, border-right, none);
             }
 
-           &:last-child:after {
+            &:last-child:after {
                 display: none;
             }
         }
@@ -275,7 +283,9 @@ p.footnote {
     color: #716d65;
 }
 
-/* Classes created by the WYSIWYG */
+/*
+Classes created by the WYSIWYG
+====================================================================== */
 .twocolumns {
     @include vendorize(column-count, 2);
 
@@ -284,6 +294,7 @@ p.footnote {
         column-rule: $editor-box-border;
     }
 }
+
 .threecolumns {
     @include vendorize(column-count, 3);
 
@@ -294,11 +305,13 @@ p.footnote {
 }
 
 @media #{$media-query-small-mobile} {
-   .twocolumns,
-   .threecolumns {
-       @include vendorize(column-count, 1);
+    .twocolumns,
+    .threecolumns {
+        @include vendorize(column-count, 1);
     }
 }
+
+/* =================================================================== */
 
 /* apply to any container to restrict width to 60em */
 .readable-line-length {

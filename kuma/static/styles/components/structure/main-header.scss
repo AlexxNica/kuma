@@ -1,6 +1,6 @@
 /*
 Main header, wraps all components of logo, main, and secondary navigation
-====================================================================== */
+☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ */
 
 #main-header {
     @include clearfix();
@@ -31,7 +31,6 @@ Main header, wraps all components of logo, main, and secondary navigation
 
 /* custom nav menu movement */
 @media #{$media-query-navigation-break} {
-
     #main-header {
         .logo {
             margin-top: -27px;
@@ -40,7 +39,6 @@ Main header, wraps all components of logo, main, and secondary navigation
 }
 
 @media #{$media-query-mobile} {
-
     #main-header {
         .logo {
             margin: ($grid-spacing / 2) 0;
@@ -52,7 +50,6 @@ Main header, wraps all components of logo, main, and secondary navigation
 }
 
 @media #{$media-query-small-mobile} {
-
     #main-header {
         .logo {
             width: 44px;

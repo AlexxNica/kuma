@@ -3,7 +3,8 @@ Call to action button
 - can be applied to a link for a single button
 - can be applied to a heading and list for a share widget inspired by
   https://www.mozilla.org/en-US/privacy/tips/
-======================================================================*/
+☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ */
+
 .cta {
     position: relative;
     min-width: 11rem;
@@ -26,7 +27,7 @@ Call to action button
         display: inline-block;
         width: 100%;
         padding: 0.75rem;
-        margin: 0px;
+        margin: 0;
         @include set-font-size(22px);
         line-height: 1;
         text-transform: uppercase;
@@ -35,16 +36,17 @@ Call to action button
         visibility: visible;
         transition: opacity 0.2s ease-in-out 0s;
     }
+
     ul {
         display: table;
         list-style-type: none;
-        margin: 0px;
-        padding: 0px;
+        margin: 0;
+        padding: 0;
         width: 100%;
         height: 100%;
         position: absolute;
-        top: 0px;
-        left: 0px;
+        top: 0;
+        left: 0;
         transition: opacity 0.2s ease-in-out 0s;
         background-color: inherit;
 
@@ -53,6 +55,7 @@ Call to action button
             visibility: hidden;
         }
     }
+
     &:hover ul,
     &:focus ul,
     &.active ul {
@@ -60,11 +63,12 @@ Call to action button
         opacity: 1;
         z-index: 1;
     }
+
     li {
         display: table-cell;
         width: 33.3%;
-        margin: 0px;
-        padding: .3rem 0px;
+        margin: 0;
+        padding: .3rem 0;
         text-align: center;
         vertical-align: middle;
 
@@ -73,26 +77,32 @@ Call to action button
             transition: color 0.1s ease-in-out 0s;
             color: $text-color;
         }
+
         a {
             color: #fff;
-            font-size: 0px;
+            font-size: 0;
             display: block;
             height: 100%;
             width: 100%;
+
             &:hover,
             &:focus {
                 text-decoration: none;
             }
+
             &:before {
-                font-family: "FontAwesome";
+                font-family: FontAwesome;
                 font-size: 2rem;
             }
+
             &.twitter:before {
                 content: '\f099';
             }
+
             &.facebook:before {
                 content: '\f09a';
             }
+
             &.g-plus:before {
                 content: '\f0d5';
             }

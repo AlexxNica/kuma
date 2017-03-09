@@ -5,9 +5,12 @@
 html, body {
     background: #fff;
 }
+
 html.maximized {
+    /* stylelint-disable-next-line declaration-no-important */
     overflow-y: auto !important;
 }
+
 body {
     padding: $grid-spacing;
 
@@ -54,6 +57,7 @@ body {
 pre {
     position: relative;
 }
+
 pre:before {
     @include set-smaller-font-size();
     font-family: arial, sans-serif;
@@ -94,7 +98,7 @@ $languages: (
     $space: unquote('pre[class^="brush: ')+unquote($key)+unquote('"]:before');
 
     #{$nospace},
-    #{$space}{
+    #{$space} {
         content: $value;
     }
 }

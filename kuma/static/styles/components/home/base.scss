@@ -1,6 +1,7 @@
 /*
-Override MDN standard styles
-====================================================================== */
+    Override MDN standard styles
+*/
+
 #home {
     @include create-home-gradient-background($homepage-background-color);
     @include remove-main-spacing();
@@ -78,14 +79,12 @@ Override MDN standard styles
             > #{$selector-icon} {
                 display: none;
             }
-
         }
     }
 }
 
 /* right to left */
 html[dir='rtl'] #home {
-
     .icon-arrow-right:before {
         content: '\f060';
     }

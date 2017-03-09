@@ -3,7 +3,7 @@ $bg-bad : mix($negative, #fff, 5%);
 
 /*
 Pseudo element for icons
--------------------------------------------------------------- */
+====================================================================== */
 
 :not(pre)>code.example-good[class*='language-'],
 pre.example-good[class*='language-'],
@@ -11,9 +11,9 @@ pre.example-good[class*='language-'],
 pre.example-bad[class*='language-'] {
     position: relative;
 
-    &:before{
+    &:before {
         border-radius: 100%; /* make it into a circle so bgcolor doesn't show */
-        font-family: 'FontAwesome';
+        font-family: FontAwesome;
         font-size: $larger-font-size ;
         position: absolute;
         bottom: 2px;
@@ -33,7 +33,7 @@ pre.example-good[class*='language-']:before {
 :not(pre)>code.example-bad[class*='language-']:before,
 pre.example-bad[class*='language-']:before {
     background: $bg-bad;
-    color:  $negative;
+    color: $negative;
     content: '\f119';
 }
 

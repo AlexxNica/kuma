@@ -1,6 +1,6 @@
 /*
-    Used to style the dashboard widgets in the dashboard apps
-*/
+Used to style the dashboard widgets in the dashboard apps
+☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ */
 
 @import 'includes/vars';
 @import 'includes/mixins';
@@ -40,15 +40,19 @@
             margin-right: 6px;
             padding: 2px 4px;
         }
+
         .new {
             @include rgba-fallback(background, $green, 0.6);
         }
+
         .edit {
             background: $blue;
         }
+
         .locale {
             @include rgba-fallback(background, #777, 0.6);
         }
+
         .deleted {
             @include rgba-fallback(background, #f00, 0.6);
         }
@@ -213,9 +217,10 @@ td.dashboard-comment {
     max-height: 200px;
     overflow: hidden;
     overflow-y: scroll;
-    border :1px solid #000;
+    border: 1px solid #000;
 
     .diff {
+        /* stylelint-disable-next-line declaration-no-important */
         margin-top: 0 !important;
     }
 
@@ -228,10 +233,12 @@ td.dashboard-comment {
     #id_start_date, #id_end_date {
         width: 100px;
     }
+
     label {
         display: inline-block;
         margin-right: $content-horizontal-spacing;
     }
+
     .revision-field {
         display: inline-block;
         margin: 0 $grid-spacing ($grid-spacing / 2) 0;

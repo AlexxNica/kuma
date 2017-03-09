@@ -1,6 +1,6 @@
 /*
-    Styles for form elements
-*/
+Styles for form elements
+☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ */
 
 input, button, textarea, select, optgroup, option {
     font-family: inherit;
@@ -16,7 +16,7 @@ input[type=text], input[type=password], input[type=search], input[type=email], i
 }
 
 input[type='search'] {
-   @include vendorize(appearance, textfield);
+    @include vendorize(appearance, textfield);
 
     &::-webkit-search-decoration, &::-webkit-search-cancel-button, &::-webkit-search-results-button, &::-webkit-search-results-decoration {
         display: none;

@@ -1,11 +1,14 @@
 /*
-    "Components" used throughout the site in varying ways.
-    For example, .toggler is used in a few different widgets (TOC, subnav, etc.)
-*/
+"Components" used throughout the site in varying ways.
+For example, .toggler is used in a few different widgets (TOC, subnav, etc.)
+☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ */
 
 @import '../base/utilities';
 
-/* toggler component: a basic slide up and slide now system*/
+/*
+toggler component: a basic slide up and slide now system
+====================================================================== */
+
 .toggler {
     position: relative;
 
@@ -25,7 +28,10 @@
     display: none;
 }
 
-/* subnav component:  used within the wiki */
+/*
+subnav component:  used within the wiki
+====================================================================== */
+
 .subnav {
     .toggler, > ol > li > a {
         padding: $grid-spacing (2 * $grid-spacing) $grid-spacing $grid-spacing;
@@ -140,7 +146,7 @@ $notification-button-padding: 2px 5px 3px;
         padding: 2px;
         position: absolute;
         top: 0;
-        right: 0px;
+        right: 0;
     }
 
     /* theme the various notification states */
@@ -185,7 +191,7 @@ $notification-button-padding: 2px 5px 3px;
     @extend .media-body; /* here incase there's an icon, has the added benfiit of acting like a clearfix */
 
     /* remove margin from first element in message */
-     & *:first-child {
+    & *:first-child {
         margin-top: 0;
     }
 }
@@ -216,7 +222,6 @@ $notification-button-padding: 2px 5px 3px;
         margin: $notification-button-margin;
         padding: $notification-button-padding;
     }
-
 }
 
 .notification-tray {

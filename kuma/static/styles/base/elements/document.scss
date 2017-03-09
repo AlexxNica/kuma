@@ -1,6 +1,6 @@
 /*
-    Styles for overall document.  Minimally styles the canvas.
-*/
+Styles for overall document.  Minimally styles the canvas.
+☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰☰ */
 
 html {
     background: #fff;
@@ -11,6 +11,7 @@ body {
     color: $text-color;
     @include create-gradient-background($header-background-color);
 
+    /* typography */
     font-family: $site-font-family;
     line-height: 1.5;
     #{$selector-site-font-fallback} {
